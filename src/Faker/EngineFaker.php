@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace CodeDredd\Soap\Faker;
+namespace Renova\Soap\Faker;
 
-use CodeDredd\Soap\Xml\XMLSerializer;
-use Phpro\SoapClient\Soap\Engine\DriverInterface;
-use Phpro\SoapClient\Soap\Engine\EngineInterface;
-use Phpro\SoapClient\Soap\Engine\Metadata\MetadataInterface;
-use Phpro\SoapClient\Soap\Handler\HandlerInterface;
-use Phpro\SoapClient\Soap\HttpBinding\LastRequestInfo;
-use Phpro\SoapClient\Soap\HttpBinding\SoapRequest;
+use Renova\Soap\Xml\XMLSerializer;
+use Renova\SoapClient\Soap\Engine\DriverInterface;
+use Renova\SoapClient\Soap\Engine\EngineInterface;
+use Renova\SoapClient\Soap\Engine\Metadata\MetadataInterface;
+use Renova\SoapClient\Soap\Handler\HandlerInterface;
+use Renova\SoapClient\Soap\HttpBinding\LastRequestInfo;
+use Renova\SoapClient\Soap\HttpBinding\SoapRequest;
 
 /**
  * Class EngineFaker.

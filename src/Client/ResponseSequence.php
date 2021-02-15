@@ -1,8 +1,8 @@
 <?php
 
-namespace CodeDredd\Soap\Client;
+namespace Renova\Soap\Client;
 
-use CodeDredd\Soap\SoapFactory;
+use Renova\Soap\SoapFactory;
 use OutOfBoundsException;
 
 class ResponseSequence

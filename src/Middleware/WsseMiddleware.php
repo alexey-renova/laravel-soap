@@ -1,10 +1,10 @@
 <?php
 
-namespace CodeDredd\Soap\Middleware;
+namespace Renova\Soap\Middleware;
 
 use Http\Promise\Promise;
-use Phpro\SoapClient\Middleware\Middleware;
-use Phpro\SoapClient\Xml\SoapXml;
+use Renova\SoapClient\Middleware\Middleware;
+use Renova\SoapClient\Xml\SoapXml;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
 use RobRichards\WsePhp\WSSESoap;

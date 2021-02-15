@@ -1,9 +1,9 @@
 <?php
 
-namespace CodeDredd\Soap\Tests;
+namespace Renova\Soap\Tests;
 
-use CodeDredd\Soap\Facades\Soap;
-use CodeDredd\Soap\SoapServiceProvider;
+use Renova\Soap\Facades\Soap;
+use Renova\Soap\SoapServiceProvider;
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
 
 abstract class TestCase extends OrchestraTestCase

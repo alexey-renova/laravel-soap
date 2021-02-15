@@ -1,9 +1,9 @@
 <?php
 
-namespace CodeDredd\Soap\Commands;
+namespace Renova\Soap\Commands;
 
-use CodeDredd\Soap\Code\Client;
-use CodeDredd\Soap\Types\Generator;
+use Renova\Soap\Code\Client;
+use Renova\Soap\Types\Generator;
 use Illuminate\Console\Command;
 use Illuminate\Support\Str;
 

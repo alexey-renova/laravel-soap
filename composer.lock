@@ -1800,7 +1800,7 @@
             "type": "library",
             "autoload": {
                 "psr-0": {
-                    "Phpro\\SoapClient\\": "src/"
+                    "Renova\\SoapClient\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",

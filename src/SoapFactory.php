@@ -1,10 +1,10 @@
 <?php
 
-namespace CodeDredd\Soap;
+namespace Renova\Soap;
 
 use Closure;
-use CodeDredd\Soap\Client\Request;
-use CodeDredd\Soap\Client\ResponseSequence;
+use Renova\Soap\Client\Request;
+use Renova\Soap\Client\ResponseSequence;
 use function GuzzleHttp\Promise\promise_for;
 use GuzzleHttp\Psr7\Response as Psr7Response;
 use Illuminate\Support\Str;
@@ -97,8 +97,8 @@ class SoapFactory
     /**
      * Record a request response pair.
      *
-     * @param  \CodeDredd\Soap\Client\Request  $request
-     * @param  \CodeDredd\Soap\Client\Response  $response
+     * @param  \Renova\Soap\Client\Request  $request
+     * @param  \Renova\Soap\Client\Response  $response
      * @return void
      */
     public function recordRequestResponsePair($request, $response)
@@ -124,7 +124,7 @@ class SoapFactory
      * Register a response sequence for the given URL pattern.
      *
      * @param  string  $url
-     * @return \CodeDredd\Soap\Client\ResponseSequence
+     * @return \Renova\Soap\Client\ResponseSequence
      */
     public function fakeSequence($url = '*')
     {
@@ -137,7 +137,7 @@ class SoapFactory
      * Get an invokable object that returns a sequence of responses in order for use during stubbing.
      *
      * @param  array  $responses
-     * @return \CodeDredd\Soap\Client\ResponseSequence
+     * @return \Renova\Soap\Client\ResponseSequence
      */
     public function sequence(array $responses = [])
     {
@@ -216,7 +216,7 @@ class SoapFactory
      * Stub the given URL using the given callback.
      *
      * @param  string  $method
-     * @param  \CodeDredd\Soap\Client\Response|\GuzzleHttp\Promise\PromiseInterface|callable  $callback
+     * @param  \Renova\Soap\Client\Response|\GuzzleHttp\Promise\PromiseInterface|callable  $callback
      * @return $this
      */
     public function stubMethod($method, $callback)

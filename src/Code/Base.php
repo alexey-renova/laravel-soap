@@ -1,8 +1,8 @@
 <?php
 
-namespace CodeDredd\Soap\Code;
+namespace Renova\Soap\Code;
 
-use CodeDredd\Soap\Types\Service;
+use Renova\Soap\Types\Service;
 use Illuminate\Support\Str;
 use Laminas\Code\Generator\ClassGenerator;
 use Laminas\Code\Generator\FileGenerator;

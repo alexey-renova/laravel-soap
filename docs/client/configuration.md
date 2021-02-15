@@ -8,7 +8,7 @@ You may specify additional [Soap request options](https://doc.bccnsoft.com/docs/
         'trace' => true,
     ])->call(...);
 
-By default this options are set by the Phpro package:
+By default this options are set by the Renova package:
 
     'trace' => true,
     'exceptions' => true,

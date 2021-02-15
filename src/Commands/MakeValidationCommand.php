@@ -1,8 +1,8 @@
 <?php
 
-namespace CodeDredd\Soap\Commands;
+namespace Renova\Soap\Commands;
 
-use CodeDredd\Soap\Code\Validation;
+use Renova\Soap\Code\Validation;
 use Illuminate\Console\Command;
 use Illuminate\Support\Arr;
 

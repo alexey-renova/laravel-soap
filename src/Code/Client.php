@@ -1,9 +1,9 @@
 <?php
 
-namespace CodeDredd\Soap\Code;
+namespace Renova\Soap\Code;
 
-use CodeDredd\Soap\Facades\Soap;
-use CodeDredd\Soap\Types\Service;
+use Renova\Soap\Facades\Soap;
+use Renova\Soap\Types\Service;
 use Illuminate\Support\Str;
 use Illuminate\Support\Traits\Macroable;
 use Laminas\Code\Generator\ClassGenerator;
@@ -51,7 +51,7 @@ class Client extends Base
 
             return new GenericTag(
                 'method',
-                '\\CodeDredd\\Soap\\Client\\Response '.$action->getName().$params
+                '\\Renova\\Soap\\Client\\Response '.$action->getName().$params
             );
         })->values()->toArray();
         $docBlock = DocBlockGenerator::fromArray([
@@ -66,7 +66,7 @@ class Client extends Base
             'tags' => [
                 new ParamTag('method', 'string'),
                 new ParamTag('parameters', 'mixed'),
-                new ReturnTag('\CodeDredd\Soap\Client\Response|mixed'),
+                new ReturnTag('\Renova\Soap\Client\Response|mixed'),
             ],
         ])->setWordWrap(false);
         $callMethodParameters = [
@@ -127,7 +127,7 @@ class Client extends Base
                 'shortDescription' => 'Call action '.$action->getName(),
                 'tags' => [
                     new ParamTag('body', 'array'),
-                    new ReturnTag('\CodeDredd\Soap\Client\Response'),
+                    new ReturnTag('\Renova\Soap\Client\Response'),
                 ],
             ])
         );

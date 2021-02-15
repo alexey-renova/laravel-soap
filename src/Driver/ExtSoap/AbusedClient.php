@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace CodeDredd\Soap\Driver\ExtSoap;
+namespace Renova\Soap\Driver\ExtSoap;
 
-use Phpro\SoapClient\Soap\Driver\ExtSoap\AbusedClient as PhproAbusedClient;
-use Phpro\SoapClient\Soap\Driver\ExtSoap\ExtSoapOptions;
-use Phpro\SoapClient\Soap\HttpBinding\SoapRequest;
-use Phpro\SoapClient\Xml\SoapXml;
+use Renova\SoapClient\Soap\Driver\ExtSoap\AbusedClient as RenovaAbusedClient;
+use Renova\SoapClient\Soap\Driver\ExtSoap\ExtSoapOptions;
+use Renova\SoapClient\Soap\HttpBinding\SoapRequest;
+use Renova\SoapClient\Xml\SoapXml;
 
-class AbusedClient extends PhproAbusedClient
+class AbusedClient extends RenovaAbusedClient
 {
-    public static function createFromOptions(ExtSoapOptions $options): PhproAbusedClient
+    public static function createFromOptions(ExtSoapOptions $options): RenovaAbusedClient
     {
         return new self($options->getWsdl(), $options->getOptions());
     }

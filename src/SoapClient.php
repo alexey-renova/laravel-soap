@@ -1,31 +1,31 @@
 <?php
 
-namespace CodeDredd\Soap;
+namespace Renova\Soap;
 
-use CodeDredd\Soap\Client\Request;
-use CodeDredd\Soap\Client\Response;
-use CodeDredd\Soap\Driver\ExtSoap\ExtSoapEngineFactory;
-use CodeDredd\Soap\Exceptions\NotFoundConfigurationException;
-use CodeDredd\Soap\Exceptions\SoapException;
-use CodeDredd\Soap\Middleware\WsseMiddleware;
+use Renova\Soap\Client\Request;
+use Renova\Soap\Client\Response;
+use Renova\Soap\Driver\ExtSoap\ExtSoapEngineFactory;
+use Renova\Soap\Exceptions\NotFoundConfigurationException;
+use Renova\Soap\Exceptions\SoapException;
+use Renova\Soap\Middleware\WsseMiddleware;
 use GuzzleHttp\HandlerStack;
 use Http\Adapter\Guzzle6\Client;
 use Http\Client\Exception\HttpException;
 use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Support\Str;
 use Illuminate\Support\Traits\Macroable;
-use Phpro\SoapClient\Middleware\BasicAuthMiddleware;
-use Phpro\SoapClient\Middleware\RemoveEmptyNodesMiddleware;
-use Phpro\SoapClient\Middleware\WsaMiddleware;
-use Phpro\SoapClient\Soap\Driver\ExtSoap\ExtSoapOptions;
-use Phpro\SoapClient\Soap\Engine\EngineInterface;
-use Phpro\SoapClient\Soap\Handler\HandlerInterface;
-use Phpro\SoapClient\Soap\Handler\HttPlugHandle;
-use Phpro\SoapClient\Type\ResultInterface;
-use Phpro\SoapClient\Type\ResultProviderInterface;
-use Phpro\SoapClient\Util\XmlFormatter;
-use Phpro\SoapClient\Wsdl\Provider\LocalWsdlProvider;
-use Phpro\SoapClient\Wsdl\Provider\WsdlProviderInterface;
+use Renova\SoapClient\Middleware\BasicAuthMiddleware;
+use Renova\SoapClient\Middleware\RemoveEmptyNodesMiddleware;
+use Renova\SoapClient\Middleware\WsaMiddleware;
+use Renova\SoapClient\Soap\Driver\ExtSoap\ExtSoapOptions;
+use Renova\SoapClient\Soap\Engine\EngineInterface;
+use Renova\SoapClient\Soap\Handler\HandlerInterface;
+use Renova\SoapClient\Soap\Handler\HttPlugHandle;
+use Renova\SoapClient\Type\ResultInterface;
+use Renova\SoapClient\Type\ResultProviderInterface;
+use Renova\SoapClient\Util\XmlFormatter;
+use Renova\SoapClient\Wsdl\Provider\LocalWsdlProvider;
+use Renova\SoapClient\Wsdl\Provider\WsdlProviderInterface;
 
 /**
  * Class SoapClient.
@@ -110,7 +110,7 @@ class SoapClient
     /**
      * Create a new Soap Client instance.
      *
-     * @param  \CodeDredd\Soap\SoapFactory|null  $factory
+     * @param  \Renova\Soap\SoapFactory|null  $factory
      * @return void
      */
     public function __construct(SoapFactory $factory = null)
@@ -192,18 +192,18 @@ class SoapClient
 
         return $this;
     }
-
+    
     /**
      * @param  string  $username
      * @param  string  $password
      * @return $this
      */
-    public function withBasicAuth(string $username, string $password)
+    public function withBasicAuth(array $credentials)
     {
         $this->middlewares = array_merge_recursive($this->middlewares, [
-            'basic' => new BasicAuthMiddleware($username, $password),
+            'basic' => new BasicAuthMiddleware($credentials['username'], $credentials['password']),
         ]);
-
+        
         return $this;
     }
 

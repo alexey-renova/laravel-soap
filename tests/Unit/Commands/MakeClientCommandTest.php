@@ -1,8 +1,8 @@
 <?php
 
-namespace CodeDredd\Soap\Tests\Unit\Commands;
+namespace Renova\Soap\Tests\Unit\Commands;
 
-use CodeDredd\Soap\Tests\TestCase;
+use Renova\Soap\Tests\TestCase;
 
 class MakeClientCommandTest extends TestCase
 {

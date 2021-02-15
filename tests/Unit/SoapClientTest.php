@@ -1,11 +1,11 @@
 <?php
 
-namespace CodeDredd\Soap\Tests\Unit;
+namespace Renova\Soap\Tests\Unit;
 
-use CodeDredd\Soap\Client\Request;
-use CodeDredd\Soap\Client\Response;
-use CodeDredd\Soap\Facades\Soap;
-use CodeDredd\Soap\Tests\TestCase;
+use Renova\Soap\Client\Request;
+use Renova\Soap\Client\Response;
+use Renova\Soap\Facades\Soap;
+use Renova\Soap\Tests\TestCase;
 
 class SoapClientTest extends TestCase
 {

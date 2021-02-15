@@ -1,6 +1,6 @@
 <?php
 
-namespace CodeDredd\Soap\Types;
+namespace Renova\Soap\Types;
 
 use Illuminate\Console\OutputStyle;
 use Wsdl2PhpGenerator\ArrayType;

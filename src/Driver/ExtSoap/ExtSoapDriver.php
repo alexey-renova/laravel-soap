@@ -1,13 +1,13 @@
 <?php
 
-namespace CodeDredd\Soap\Driver\ExtSoap;
+namespace Renova\Soap\Driver\ExtSoap;
 
-use Phpro\SoapClient\Soap\Driver\ExtSoap\ExtSoapDriver as PhproExtSoapDriver;
-use Phpro\SoapClient\Soap\Driver\ExtSoap\ExtSoapOptions;
+use Renova\SoapClient\Soap\Driver\ExtSoap\ExtSoapDriver as RenovaExtSoapDriver;
+use Renova\SoapClient\Soap\Driver\ExtSoap\ExtSoapOptions;
 
-class ExtSoapDriver extends PhproExtSoapDriver
+class ExtSoapDriver extends RenovaExtSoapDriver
 {
-    public static function createFromOptions(ExtSoapOptions $options): PhproExtSoapDriver
+    public static function createFromOptions(ExtSoapOptions $options): RenovaExtSoapDriver
     {
         $client = AbusedClient::createFromOptions($options);
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace CodeDredd\Soap\Code;
+namespace Renova\Soap\Code;
 
-use CodeDredd\Soap\Types\Service;
+use Renova\Soap\Types\Service;
 use Illuminate\Support\Str;
 use Laminas\Code\Generator\DocBlock\Tag\GenericTag;
 use Laminas\Code\Generator\DocBlockGenerator;
@@ -37,7 +37,7 @@ class ClientContract extends Base
 
             return new GenericTag(
                 'method',
-                '\\CodeDredd\\Soap\\Client\\Response '.$action->getName().$params.$action->getDescription()
+                '\\Renova\\Soap\\Client\\Response '.$action->getName().$params.$action->getDescription()
             );
         })->values()->toArray();
         $docBlock = DocBlockGenerator::fromArray([

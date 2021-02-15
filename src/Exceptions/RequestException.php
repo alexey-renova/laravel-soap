@@ -1,8 +1,8 @@
 <?php
 
-namespace CodeDredd\Soap\Exceptions;
+namespace Renova\Soap\Exceptions;
 
-use CodeDredd\Soap\Client\Response;
+use Renova\Soap\Client\Response;
 use Exception;
 
 class RequestException extends Exception
@@ -10,14 +10,14 @@ class RequestException extends Exception
     /**
      * The response instance.
      *
-     * @var \CodeDredd\Soap\Client\Response
+     * @var \Renova\Soap\Client\Response
      */
     public $response;
 
     /**
      * Create a new exception instance.
      *
-     * @param  \CodeDredd\Soap\Client\Response  $response
+     * @param  \Renova\Soap\Client\Response  $response
      * @return void
      */
     public function __construct(Response $response)

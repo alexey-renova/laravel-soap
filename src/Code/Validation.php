@@ -1,8 +1,8 @@
 <?php
 
-namespace CodeDredd\Soap\Code;
+namespace Renova\Soap\Code;
 
-use CodeDredd\Soap\Types\Service;
+use Renova\Soap\Types\Service;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Str;

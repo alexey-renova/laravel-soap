@@ -1,8 +1,8 @@
 <?php
 
-namespace CodeDredd\Soap\Xml;
+namespace Renova\Soap\Xml;
 
-use CodeDredd\Soap\Tests\TestCase;
+use Renova\Soap\Tests\TestCase;
 
 class XmlSerializerTest extends TestCase
 {

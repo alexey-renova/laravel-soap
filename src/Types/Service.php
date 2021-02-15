@@ -6,7 +6,7 @@
  * Time: 17:21.
  */
 
-namespace CodeDredd\Soap\Types;
+namespace Renova\Soap\Types;
 
 use Wsdl2PhpGenerator\ConfigInterface;
 use Wsdl2PhpGenerator\Operation;

@@ -1,6 +1,6 @@
 <?php
 
-namespace CodeDredd\Soap\Exceptions;
+namespace Renova\Soap\Exceptions;
 
 use RuntimeException;
 

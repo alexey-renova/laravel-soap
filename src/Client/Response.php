@@ -1,15 +1,15 @@
 <?php
 
-namespace CodeDredd\Soap\Client;
+namespace Renova\Soap\Client;
 
 use ArrayAccess;
-use CodeDredd\Soap\Exceptions\RequestException;
-use CodeDredd\Soap\Xml\SoapXml;
+use Renova\Soap\Exceptions\RequestException;
+use Renova\Soap\Xml\SoapXml;
 use GuzzleHttp\Psr7\Response as Psr7Response;
 use Illuminate\Support\Str;
 use Illuminate\Support\Traits\Macroable;
 use LogicException;
-use Phpro\SoapClient\Type\ResultInterface;
+use Renova\SoapClient\Type\ResultInterface;
 
 /**
  * Class Response.
@@ -169,7 +169,7 @@ class Response implements ResultInterface, ArrayAccess
      *
      * @return $this
      *
-     * @throws \CodeDredd\Soap\Exceptions\RequestException
+     * @throws \Renova\Soap\Exceptions\RequestException
      */
     public function throw()
     {

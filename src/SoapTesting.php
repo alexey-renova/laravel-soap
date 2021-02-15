@@ -1,8 +1,8 @@
 <?php
 
-namespace CodeDredd\Soap;
+namespace Renova\Soap;
 
-use CodeDredd\Soap\Client\Request;
+use Renova\Soap\Client\Request;
 use PHPUnit\Framework\Assert as PHPUnit;
 
 class SoapTesting
@@ -15,7 +15,7 @@ class SoapTesting
     /**
      * Create a new Soap Testing instance.
      *
-     * @param  \CodeDredd\Soap\SoapFactory|null  $factory
+     * @param  \Renova\Soap\SoapFactory|null  $factory
      * @return void
      */
     public function __construct(SoapFactory $factory = null)

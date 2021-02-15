@@ -1,11 +1,11 @@
 <?php
 
-namespace CodeDredd\Soap\Xml;
+namespace Renova\Soap\Xml;
 
-use CodeDredd\Soap\Tests\TestCase;
-use Phpro\SoapClient\Soap\Driver\ExtSoap\ExtSoapEngineFactory;
-use Phpro\SoapClient\Soap\Driver\ExtSoap\ExtSoapOptions;
-use Phpro\SoapClient\Wsdl\Provider\LocalWsdlProvider;
+use Renova\Soap\Tests\TestCase;
+use Renova\SoapClient\Soap\Driver\ExtSoap\ExtSoapEngineFactory;
+use Renova\SoapClient\Soap\Driver\ExtSoap\ExtSoapOptions;
+use Renova\SoapClient\Wsdl\Provider\LocalWsdlProvider;
 
 class SoapXmlTest extends TestCase
 {

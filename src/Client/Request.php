@@ -1,9 +1,9 @@
 <?php
 
-namespace CodeDredd\Soap\Client;
+namespace Renova\Soap\Client;
 
-use CodeDredd\Soap\Xml\SoapXml;
-use CodeDredd\Soap\Xml\XMLSerializer;
+use Renova\Soap\Xml\SoapXml;
+use Renova\Soap\Xml\XMLSerializer;
 use Illuminate\Support\Arr;
 
 /**

@@ -1,8 +1,8 @@
 <?php
 
-namespace CodeDredd\Soap\Xml;
+namespace Renova\Soap\Xml;
 
-class SoapXml extends \Phpro\SoapClient\Xml\SoapXml
+class SoapXml extends \Renova\SoapClient\Xml\SoapXml
 {
     /**
      * Get the error message from a SoapFault instance.

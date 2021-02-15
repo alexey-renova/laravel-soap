@@ -1,9 +1,9 @@
 <?php
 
-namespace CodeDredd\Soap;
+namespace Renova\Soap;
 
-use CodeDredd\Soap\Commands\MakeClientCommand;
-use CodeDredd\Soap\Commands\MakeValidationCommand;
+use Renova\Soap\Commands\MakeClientCommand;
+use Renova\Soap\Commands\MakeValidationCommand;
 use Illuminate\Support\ServiceProvider;
 
 class SoapServiceProvider extends ServiceProvider

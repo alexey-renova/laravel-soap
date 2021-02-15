@@ -1,5 +1,5 @@
 {
-    "name": "codedredd/laravel-soap",
+    "name": "renova/laravel-soap",
     "description": "A SoapClient wrapper integration for Laravel",
     "keywords": ["laravel", "soap", "client", "wrapper"],
     "license": "MIT",
@@ -16,7 +16,7 @@
         "ext-dom": "*",
         "ext-simplexml": "*",
         "illuminate/support": "^5.6 || ^6.0 || ^7.0",
-        "phpro/soap-client": "^1.1",
+        "renova/soap-client": "^1.1",
         "php-http/guzzle6-adapter": "^2.0",
         "php-http/discovery": "^1.7",
         "php-http/message": "^1.8",
@@ -32,18 +32,18 @@
     },
     "autoload": {
         "psr-4": {
-            "CodeDredd\\Soap\\": "src/"
+            "Renova\\Soap\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "CodeDredd\\Soap\\Tests\\": "tests/"
+            "Renova\\Soap\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "CodeDredd\\Soap\\SoapServiceProvider"
+                "Renova\\Soap\\SoapServiceProvider"
             ],
             "aliases": {
                 "SOAP": "SoapFacade"

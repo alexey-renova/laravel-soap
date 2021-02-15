@@ -1,6 +1,6 @@
 <?php
 
-namespace CodeDredd\Soap\Xml;
+namespace Renova\Soap\Xml;
 
 use DOMDocument;
 use DOMNode;
