@@ -194,8 +194,7 @@ class SoapClient
     }
     
     /**
-     * @param  string  $username
-     * @param  string  $password
+     * @param  array  $credentials
      * @return $this
      */
     public function withBasicAuth(array $credentials)
